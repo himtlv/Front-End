@@ -1,0 +1,83 @@
+
+.formulario-completo{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 1300px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+
+.relleno{
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin: auto;
+}
+
+form{
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1{
+    padding-top: 60px;
+    font-style: bold;
+}
+
+body{
+  background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
+
+label{
+  display: block;
+  margin: 1rem;
+}
+
+
+input, textarea, select{
+  width: 100%;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+input{
+  height: 30px;
+}
+
+fieldset{
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+.inline{
+  width: unset;
+  margin: 0 1rem 0 0;
+  vertical-align: middle;
+}
+
+select{
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-top: 10px;
+}
+
+
+.button{
+  height: 60px;
+  font-size: 18px;
+}

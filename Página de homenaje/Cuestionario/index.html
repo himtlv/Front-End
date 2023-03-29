@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Historia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo">
+
+        <h1>HTML/CSS Quiz</h1>
+
+        <nav>
+
+            <ul>
+                <li><a href="#student-info" id="student-info">INFO</a></li>
+                <li><a href="#html-questions" id="html-questions">HTML</a></li>
+                <li><a href="#css-questions" id="css-questions">CSS</a></li>
+            </ul>
+
+
+    </header>
+
+
+    <main>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post" >
+
+            <section role="region" aria-labelledby="student-info">
+
+                <h2 id="student-info">Student Info</h2>
+
+                <div class="info">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" name="nombres">
+                </div>
+
+                <div class="info">
+                    <label for="correo-electronico">Correo electrónico</label>
+                    <input type="email" id="correo-electronico" name="correo-electronico">
+                </div>
+
+                <div class="info">
+                    <label for="fecha-de-nacimiento">F.D.N<span class="sr-only">(Fecha de nacimiento)</span></label>
+                    <input type="date" id="fecha-de-nacimiento" name="fecha-de-nacimiento">
+                </div>
+
+            </section>
+
+
+            <section role="region" aria-labelledby="html-questions">
+
+                <h2 id="html-questions">HTML Questions</h2>
+
+                <div class="question-block">
+
+                    <p>1<p>
+
+                    <fieldset class="question" name="primera-pregunta">
+
+                        <legend>
+
+                            <legend>Somos seres humanos?</legend>
+
+                            <ul class="answers-list">
+                                <li><label for="q1-a1"><input type="radio" id="q1-a1" value="true" name="checked-1">True</label></li>
+                                <li><label for="q1-a2"><input type="radio" id="q1-a2" value="false" name="checked-1">False</label></li>
+                            </ul>
+
+                    </fieldset>
+                    
+                </div>
+
+                <div class="question-block">
+
+                    <p>2</p>
+
+                    <fieldset class="question" name="segunda-pregunta">
+
+                        <legend>Respiramos por la nariz?</legend>
+
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="true" name="checked-2"></label>True</li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="false" name="checked-2"></label>False</li>
+                        </ul>
+
+
+                    </fieldset>
+
+                </div>
+
+            </section>
+
+            <section role="region" aria-labelledby="css-questions">
+
+                <h2 id="css-questions">CSS Questions</h2>
+
+            </section>
+
+        </form>
+
+
+    </main>
+    
+</body>
+
+</html>

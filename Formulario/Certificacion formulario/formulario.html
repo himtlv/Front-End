@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <title>Formulario</title>
+</head>
+
+<body>
+
+<div class="formulario-completo">
+
+    <div class="relleno">
+        <!--Titulo de formulario-->
+
+            <h1 id="title">Formulario de Contacto</h1>
+            <p id="description">Rellena el formulario para que estemos en contacto y te enteres de todas nuestras <strong>novedades.</strong></p>
+        
+        <!--Inicio de formulario-->
+
+    <form action="" id="survey-form">
+
+        <fieldset>
+
+            <label for="name" id="name-label">Nombre<input type="text" id="name" required placeholder="Escribe tu nombre y apellido"></label>
+            <label for="email" id="email-label">Email<input type="email" id="email" required placeholder="ejemplo@email.com"></label>
+            <label for="number">Número telefónico<input type="number" id="phone-number" required placeholder="Ingresa tu número telefónico"></label>
+            <label for="number" id="number-label">Edad<input type="number" id="number" min="1" max="120" required placeholder="Ingresa tu edad" pattern="^[0-9]+"></label>
+
+        </fieldset>
+
+        <!--Formulario de recomendación-->
+
+        <fieldset>
+
+            <label for="recomendacion">¿Recomendarias nuestro servicio a tus amig@s?</label>
+
+            <label for=""><input class="inline" type="checkbox" name="recomendacion" id="si" value="si-recomiendo" checked>Sí, lo recomiendo</label>
+            <label for=""><input class="inline" type="checkbox" name="recomendacion" id="no" value="no-recomiendo">No, no lo recomendaría</label>
+             
+            
+
+        <!--Selección de referencias-->
+
+            <label for="referido">¿Por cual red social te enteraste de nosotros?<select name="referido" id="dropdown">
+
+                <option value="0">(selecciona una opción)</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">YouTube</option>
+                <option value="4">Otra red social</option>
+
+                </select>
+
+            </label>
+
+
+        <!--Término del formulario general-->
+
+        </fieldset>
+
+        <!--Primer radio-->
+
+        <fieldset>
+
+            
+            <label for="text">¿Que medio prefieres para contactarnos contigo?</label>
+            <label for="telefono" ><input class="inline" type="radio" name="contacto" id="telefono" value="teléfono">Contactenme por telefono</label>
+            <label for="telefono"><input class="inline" type="radio" name="contacto" id="correo" value="correo">Contactenme por correo</label>
+        
+        </fieldset>
+
+        <!-- Pie de página-->
+
+        <label for="comentarios">Comentarios<textarea id="bio" rows="4" cols="20" placeholder="Comenta que te pareció el proceso" name="comentarios"></textarea></label>
+
+        <input class="button" type="submit" value="Enviar" id="submit">
+
+    </form>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
